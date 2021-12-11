@@ -103,7 +103,7 @@ box-sizing: border-box;
     color: #000;
     
 }
-@media(max-width: 700px) {
+@media(max-width: 991px) {
 
     .row {
         flex-direction:column;
@@ -124,9 +124,7 @@ color: #fff;
       padding: 20px;
       
     }
-    .content h1 {
-      font-size: 27px;
-    }
+  
     .button {
         padding: 10px 25px;
     }
