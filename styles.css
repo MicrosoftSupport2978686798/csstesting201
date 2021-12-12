@@ -82,7 +82,7 @@ text-decoration: none;
 }
 .course-col {
 flex-basis: 35%;
-
+background: red;
 margin: 20px;
 border-radius: 8px;
 margin-bottom: 5%;
