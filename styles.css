@@ -64,12 +64,7 @@ cursor: default;
     
  
 }
-.content p, h1, h2, h3, b, h4, h5 {
-    color: #fff;
-}
-.content h1 {
-    font-size: 80px;
-}
+
 .button {
 padding: 15px 40px;
 background: linear-gradient(90deg, rgb(34, 164, 173), rgb(32, 199, 129));
@@ -87,7 +82,7 @@ text-decoration: none;
 }
 .course-col {
 flex-basis: 35%;
-background: linear-gradient(180deg, rgb(120, 203, 206) 40%, #fff 50%);
+
 margin: 20px;
 border-radius: 8px;
 margin-bottom: 5%;
