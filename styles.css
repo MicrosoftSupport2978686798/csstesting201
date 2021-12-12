@@ -1,0 +1,274 @@
+/* Made by WhyAreYouLookingAtMyUsername */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    
+    }
+/* #3b5998 */
+.main {
+    position: relative;
+    background: linear-gradient(120deg,#fff,#fff 60%, rgb(39, 41, 52) 20%, rgb(39, 41, 52) 50%);
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    background:#6ee8d2;
+    opacity: 60%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+header .logo img {
+    max-width: 50px;
+    margin-right: 20px;
+
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+header ul li a:hover,
+header ul li a:active {
+color: blue;
+    cursor: default;
+}
+.app {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b5998;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,1);
+    opacity: 80%;
+    animation: red 3s infinite;
+    cursor: no-drop;
+    
+}
+.app:hover {
+    opacity: 80%;
+    cursor: default;
+    
+}
+.app ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+.contentBx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+ 
+}
+.contentBx .text {
+max-width: 800px;
+}
+.contentBx .text h2 {
+    font-size: 70px;
+    color: black;
+}
+.contentBx .text p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8em;
+}
+.btn {
+    background:  #292b2f;
+    color: #fff;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+    
+   
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.course-col {
+flex-basis: 35%;
+background: rgb(206,206,206);
+margin: 20px;
+border-radius: 8px;
+margin-bottom: 5%;
+color: #000;
+padding: 40px 12px;
+box-sizing: border-box;
+
+}
+.course-col h1 {
+    color: #000;
+    
+}
+.course-col h3 {
+    color: #000;
+    
+}
+@media(max-width: 700px) {
+
+    .row {
+        flex-direction:column;
+    }
+}
+
+
+.btn:hover {
+    opacity: 80%;
+    
+    cursor: no-drop;
+}
+.btn ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+
+@keyframes fadein {
+    0% {
+     opacity: 0%;   
+    }
+    100% {
+      opacity: 100%;  
+    }
+}
+@media (max-width:991px) {
+    header {
+        padding: 15px;
+    }
+    .main {
+      padding: 30px;
+      background: #fff;  
+    }
+    .app {
+     display: none;   
+    }
+    .contentBx {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+    }
+   
+
+}
+
+
+.boxclass {
+    padding: 30px;
+    margin: 15px;
+    background: rgb(39, 41, 52);
+    animation: change 3s infinite;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.boxclass h1 {
+    font-size: 40px;
+}
+@keyframes change {
+    0% {
+        opacity: 100%;
+        
+         }
+    50% {
+        opacity: 80%;
+       }
+    100% {
+        opacity: 100%;
+        
+       }
+}
+.button-next {
+padding: 15px;
+margin: 5px;
+background-color: #fff;
+border-radius: 5px;
+text-decoration: none;
+cursor: default;
+color: black;
+box-shadow: 0 5px 15px rgba(0,0,0,0,1);
+
+}
+.button-next:hover {
+animation: red 3s infinite;
+cursor: no-drop;
+opacity: 80%;
+}
+.button-invite {
+padding: 15px;
+margin: 20px;
+background-color: #fff;
+border-radius: 5px;
+text-decoration: none;
+cursor: default;
+color: black;
+box-shadow: 0 5px 15px rgba(0,0,0,0,1);
+}
+
+
+@keyframes blink {
+0% {
+background: #29b951;
+    }
+50% {
+background: #fff;   
+    }
+ 100% {
+background: #29b951;
+    }
+}
+
+/* Icon positions */
+.button-invite ion-icon {
+  margin-right: 10px;  
+}
+.button-next ion-icon {
+  margin-right: 10px;  
+}
+.boxinfo ion-icon {
+  margin-right: 20px;  
+}
+
+/* Scroll bar */
+body::-webkit-scrollbar{
+    background: black;
+    width: 10px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5px;
+  }
+ 
+
+
