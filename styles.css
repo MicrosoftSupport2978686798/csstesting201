@@ -7,16 +7,24 @@
     font-family: 'Outfit', sans-serif;
     
     }
+    body {
+    background: rgb(39, 41, 52);
+    }
 /* #3b5998 */
 .main {
     position: relative;
-    background: linear-gradient(120deg,#fff,#fff 60%, rgb(39, 41, 52) 20%, rgb(39, 41, 52) 50%);
+    background: rgb(39, 41, 52);
     min-height: 100vh;
     padding: 0 100px;
     display: flex;
     align-items: center;
 }
-
+.main p,h1,b,h2,h3,h4 {
+    color:#fff;
+}
+#countdown {
+    animation: fadein 2s infinite;
+}
 header {
     position: fixed;
     background:#6ee8d2;
@@ -25,7 +33,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 25px 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -45,7 +53,7 @@ header ul li {
 }
 header ul li a {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-weight: 500;
 }
 header ul li a:hover,
@@ -83,6 +91,7 @@ color: blue;
     width: 100%;
     display: flex;
     align-items: center;
+   
  
 }
 .contentBx .text {
@@ -90,16 +99,16 @@ max-width: 800px;
 }
 .contentBx .text h2 {
     font-size: 70px;
-    color: black;
+    color:#fff;
 }
 .contentBx .text p {
     font-size: 1.1em;
-    color: #333;
+    color:#fff;
     line-height: 1.8em;
 }
 .btn {
-    background:  #292b2f;
-    color: #fff;
+    background:  #fff;
+    color: #000;
     display: inline-flex;
     text-decoration: none;
     padding: 10px 15px;
@@ -109,15 +118,16 @@ max-width: 800px;
     
    
 }
+/* VPS PRICING */
 .row {
     display: flex;
     justify-content: space-between;
 }
 .course-col {
 flex-basis: 35%;
-background: rgb(206,206,206);
+background: #fff;
 margin: 20px;
-border-radius: 8px;
+border-radius: 5px;
 margin-bottom: 5%;
 color: #000;
 padding: 40px 12px;
@@ -132,67 +142,71 @@ box-sizing: border-box;
     color: #000;
     
 }
+.course h2{
+    font-size: 40px;
+    text-align: center;
+   
+    margin: 0px;
+}
 @media(max-width: 700px) {
 
     .row {
         flex-direction:column;
     }
+  
 }
+/* VPS PRICING */
 
 
 .btn:hover {
     opacity: 80%;
     
-    cursor: no-drop;
+    
 }
 .btn ion-icon {
     margin-right: 10px;
     font-size: 1.4em;
 }
 
-
-@keyframes fadein {
-    0% {
-     opacity: 0%;   
-    }
-    100% {
-      opacity: 100%;  
-    }
-}
-@media (max-width:991px) {
-    header {
-        padding: 15px;
-    }
-    .main {
-      padding: 30px;
-      background: #fff;  
-    }
-    .app {
-     display: none;   
-    }
-    .contentBx {
-        flex-direction: column-reverse;
-        margin: 100px 0;
-    }
-   
-
-}
-
-
 .boxclass {
     padding: 30px;
     margin: 15px;
-    background: rgb(39, 41, 52);
+    background: #fff;
     animation: change 3s infinite;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    color: #fff;
+   
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 .boxclass h1 {
     font-size: 40px;
+    color: #000;
+}
+
+.course .text-large {
+    margin: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.plan {
+display: flex;
+justify-content: space-between;
+}
+
+.plan-col {
+padding: 30px;
+margin: 40px;
+background: #fff;
+border-radius: 15px;
+text-align: left;
+justify-content: center;
+align-items: center;
+}
+.plan-col h1 {
+font-size: 30px;
+color: #000;
 }
 @keyframes change {
     0% {
@@ -209,43 +223,27 @@ box-sizing: border-box;
 }
 .button-next {
 padding: 15px;
-margin: 5px;
-background-color: #fff;
+margin: 0px;
+background-color: rgb(39, 41, 52);
 border-radius: 5px;
 text-decoration: none;
 cursor: default;
-color: black;
+color: #fff;
 box-shadow: 0 5px 15px rgba(0,0,0,0,1);
 
-}
-.button-next:hover {
-animation: red 3s infinite;
-cursor: no-drop;
-opacity: 80%;
 }
 .button-invite {
 padding: 15px;
 margin: 20px;
-background-color: #fff;
+background-color: rgb(39, 41, 52);
 border-radius: 5px;
 text-decoration: none;
 cursor: default;
-color: black;
+color: #fff;
 box-shadow: 0 5px 15px rgba(0,0,0,0,1);
 }
 
 
-@keyframes blink {
-0% {
-background: #29b951;
-    }
-50% {
-background: #fff;   
-    }
- 100% {
-background: #29b951;
-    }
-}
 
 /* Icon positions */
 .button-invite ion-icon {
@@ -266,9 +264,26 @@ body::-webkit-scrollbar{
     transition: .3s ease;
   }
   body::-webkit-scrollbar-thumb{
-    background: #fff;
+    background: limegreen;
     border-radius: 5px;
   }
  
+  @media (max-width:991px) {
+    header {
+        padding: 15px;
+    }
+    .main {
+      padding: 30px;
+      background: linear-gradient(120deg,rgb(39, 41, 52) 60%, rgb(39, 41, 52) 66%, rgb(39, 41, 52) 40%);
+     
+    }
+    .app {
+     display: none;   
+    }
+    
+   
+   
+
+}
 
 
